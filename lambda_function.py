@@ -52,8 +52,5 @@ def dailyCheck(event=None, context=None):
             message = "\n".join(hasMedici)
             sendMessage("👨‍⚕️*DISPONIBILITÀ MEDICI*:\n" + message)
 
-def weeklyCheck(event=None, context=None):
-    sendMessage("*DISPONIBILITÀ MEDICI*: tranquillo, sta funzionando")
-
 def lambda_handler(event, context):
     dailyCheck()
